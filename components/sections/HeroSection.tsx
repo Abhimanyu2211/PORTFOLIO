@@ -33,7 +33,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen grid-bg flex items-center pt-[68px]"
+      className="relative min-h-[100svh] lg:min-h-0 grid-bg flex items-center lg:items-start pt-[68px] lg:pt-[140px] pb-24 lg:pb-32"
     >
       {/* Subtle color wash */}
       <div
@@ -44,7 +44,7 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 md:px-12 lg:px-24 py-24 lg:py-32 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 md:px-12 lg:px-24 py-12 lg:py-0 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         {/* ── LEFT ── */}
         <div className="flex flex-col lg:pl-10">
@@ -143,7 +143,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.25, ease }}
-          className="w-full lg:mt-24 lg:pl-4"
+          className="w-full lg:mt-4 lg:pl-4"
         >
           <ImageCarousel />
         </motion.div>
