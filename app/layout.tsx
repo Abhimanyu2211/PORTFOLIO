@@ -4,14 +4,38 @@ import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import Navbar from "@/components/ui/Navbar";
 
 export const metadata: Metadata = {
-  title: "Abhimanyu Singh Rathore — AI/ML Engineer",
+  metadataBase: new URL("https://abhimanyu-singh-rathore.vercel.app"),
+  title: {
+    default: "Abhimanyu Singh Rathore — AI/ML Engineer",
+    template: "%s | Abhimanyu Singh Rathore",
+  },
   description:
     "Portfolio of Abhimanyu Singh Rathore — Computer Science student focused on Artificial Intelligence and Machine Learning, building intelligent applications and practical AI-powered solutions.",
-  keywords: ["AI", "ML", "Machine Learning", "Artificial Intelligence", "Software Development", "Computer Science"],
+  keywords: [
+    "Abhimanyu Singh Rathore",
+    "Abhimanyu Singh",
+    "Abhimanyu Rathore",
+    "AI/ML Engineer",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Software Development",
+    "Computer Science",
+    "Portfolio",
+  ],
+  authors: [{ name: "Abhimanyu Singh Rathore" }],
+  creator: "Abhimanyu Singh Rathore",
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://abhimanyu-singh-rathore.vercel.app/",
     title: "Abhimanyu Singh Rathore — AI/ML Engineer",
     description: "Portfolio of Abhimanyu Singh Rathore — AI/ML Engineer and Computer Science student.",
-    type: "website",
+    siteName: "Abhimanyu Singh Rathore",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Abhimanyu Singh Rathore — AI/ML Engineer",
+    description: "Portfolio of Abhimanyu Singh Rathore — AI/ML Engineer and Computer Science student.",
   },
 };
 
