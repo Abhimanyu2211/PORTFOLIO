@@ -47,7 +47,7 @@ export default function HeroSection() {
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 md:px-12 lg:px-24 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
         {/* ── LEFT ── */}
-        <div className="flex flex-col" style={{ paddingLeft: "40px" }}>
+        <div className="flex flex-col lg:pl-10">
 
           {/* Overline */}
           <FadeUp delay={0} className="flex items-center gap-4" style={{ marginBottom: "48px" }}>

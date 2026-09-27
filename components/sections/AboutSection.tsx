@@ -70,12 +70,10 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      style={{ padding: "120px 0", borderTop: "1px solid var(--border)", backgroundColor: "#f2f0eb" }}
+      className="py-16 md:py-24 lg:py-[120px]"
+      style={{ borderTop: "1px solid var(--border)", backgroundColor: "#f2f0eb" }}
     >
-      <div
-        className="w-full max-w-[1440px] mx-auto"
-        style={{ padding: "0 96px" }}
-      >
+      <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
         {/* Section label */}
         <FadeUp delay={0}>
           <p
@@ -93,14 +91,7 @@ export default function AboutSection() {
         </FadeUp>
 
         {/* Two-column layout */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1.3fr 1fr",
-            gap: "60px",
-            alignItems: "start",
-          }}
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-12 lg:gap-[60px] items-start">
           {/* ── LEFT — Bio ── */}
           <div>
             <FadeUp delay={0.05}>
@@ -169,7 +160,7 @@ export default function AboutSection() {
           </div>
 
           {/* ── RIGHT — Skills ── */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "32px", maxWidth: "420px", width: "100%", marginLeft: "auto" }}>
+          <div className="flex flex-col gap-8 w-full max-w-[420px] lg:ml-auto mt-12 lg:mt-0">
             {skillGroups.map((group, gi) => (
               <FadeUp key={group.category} delay={0.1 + gi * 0.05}>
                 <div>

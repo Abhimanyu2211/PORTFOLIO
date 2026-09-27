@@ -74,17 +74,13 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="grid-bg"
+      className="grid-bg py-16 md:py-24 lg:py-[120px]"
       style={{
-        padding: "120px 0",
         borderTop: "1px solid var(--border)",
         backgroundColor: "var(--background)",
       }}
     >
-      <div
-        className="w-full max-w-[1440px] mx-auto"
-        style={{ padding: "0 96px" }}
-      >
+      <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
         {/* Section label */}
         <FadeUp delay={0}>
           <p
@@ -105,11 +101,10 @@ export default function ExperienceSection() {
         {/* Title */}
         <FadeUp delay={0.1}>
           <h2
-            className="font-playfair tracking-tight"
+            className="font-playfair tracking-tight mb-16 lg:mb-[120px]"
             style={{
               fontSize: "clamp(4rem, 6.5vw, 6rem)",
               lineHeight: "0.9",
-              marginBottom: "120px",
             }}
           >
             <span
@@ -132,12 +127,7 @@ export default function ExperienceSection() {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr 3fr",
-                gap: "40px",
-                alignItems: "start",
-              }}
+              className="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-8 lg:gap-[40px] items-start"
             >
               {/* Left Column: Company & Date */}
               <FadeUp delay={0.1}>

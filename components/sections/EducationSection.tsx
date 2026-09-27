@@ -56,17 +56,13 @@ export default function EducationSection() {
   return (
     <section
       id="education"
-      className="grid-bg"
+      className="grid-bg py-16 md:py-24 lg:py-[120px]"
       style={{
-        padding: "120px 0",
         borderTop: "1px solid var(--border)",
         backgroundColor: "var(--background)",
       }}
     >
-      <div
-        className="w-full"
-        style={{ padding: "0 30px" }}
-      >
+      <div className="w-full px-6 md:px-8 lg:px-[30px]">
         {/* Section label */}
         <FadeUp delay={0}>
           <p
@@ -109,13 +105,7 @@ export default function EducationSection() {
           </h2>
         </FadeUp>
 
-        <div
-          className="grid grid-cols-1 md:grid-cols-2"
-          style={{
-            gap: "60px",
-            alignItems: "start",
-          }}
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[60px] items-start">
           {/* Left Column: DEGREE */}
           <FadeUp delay={0.2}>
             <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
@@ -134,10 +124,8 @@ export default function EducationSection() {
               </h3>
               
               <div
+                className="bg-white p-6 md:p-8 lg:px-12 lg:py-8 border border-[var(--border)]"
                 style={{
-                  backgroundColor: "#ffffff",
-                  padding: "32px 48px",
-                  border: "1px solid var(--border)",
                   display: "flex",
                   flexDirection: "column",
                   gap: "16px",

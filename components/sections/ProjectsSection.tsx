@@ -77,16 +77,13 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
+      className="py-16 md:py-24 lg:py-[120px]"
       style={{
-        padding: "120px 0",
         borderTop: "1px solid var(--border)",
         backgroundColor: "#f2f0eb", // Beige background for the section
       }}
     >
-      <div
-        className="w-full max-w-[1440px] mx-auto"
-        style={{ padding: "0 96px" }}
-      >
+      <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
         {/* Section label */}
         <FadeUp delay={0}>
           <p
@@ -123,15 +120,7 @@ export default function ProjectsSection() {
 
         {/* Projects Grid */}
         <FadeUp delay={0.1}>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
-              gap: "1px",
-              backgroundColor: "var(--border)",
-              border: "1px solid var(--border)",
-            }}
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[var(--border)] border border-[var(--border)]">
             {projects.map((project, idx) => (
               <div
                 key={idx}

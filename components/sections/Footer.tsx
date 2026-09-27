@@ -54,25 +54,14 @@ const LinkedInIcon = () => (
 export default function Footer() {
   return (
     <footer
+      className="pt-16 pb-8 md:pt-20 md:pb-10"
       style={{
-        padding: "80px 0 40px 0",
         borderTop: "1px solid var(--border)",
         backgroundColor: "#f2f0eb",
       }}
     >
-      <div
-        className="w-full"
-        style={{ padding: "0 30px" }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "flex-end",
-            flexWrap: "wrap",
-            gap: "80px",
-          }}
-        >
+      <div className="w-full px-6 md:px-8 lg:px-[30px]">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end flex-wrap gap-12 md:gap-[80px]">
           {/* Left side: Heading and Links */}
           <div style={{ display: "flex", flexDirection: "column", gap: "48px" }}>
             <FadeUp delay={0}>
