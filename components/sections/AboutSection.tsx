@@ -70,10 +70,10 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="py-16 md:py-24 lg:py-[120px]"
+      className="py-24 md:py-32 lg:py-[140px]"
       style={{ borderTop: "1px solid var(--border)", backgroundColor: "#f2f0eb" }}
     >
-      <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
+      <div className="w-full max-w-[1440px] mx-auto px-8 md:px-12 lg:px-24">
         {/* Section label */}
         <FadeUp delay={0}>
           <p
@@ -98,7 +98,7 @@ export default function AboutSection() {
               <h2
                 className="font-playfair"
                 style={{
-                  fontSize: "clamp(2.2rem, 3.5vw, 3rem)",
+                  fontSize: "clamp(2rem, 8vw, 3rem)",
                   lineHeight: "1.1",
                   marginBottom: "40px",
                   fontWeight: 700,

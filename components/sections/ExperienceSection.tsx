@@ -74,13 +74,13 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="grid-bg py-16 md:py-24 lg:py-[120px]"
+      className="grid-bg py-24 md:py-32 lg:py-[140px]"
       style={{
         borderTop: "1px solid var(--border)",
         backgroundColor: "var(--background)",
       }}
     >
-      <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
+      <div className="w-full max-w-[1440px] mx-auto px-8 md:px-12 lg:px-24">
         {/* Section label */}
         <FadeUp delay={0}>
           <p
@@ -103,7 +103,7 @@ export default function ExperienceSection() {
           <h2
             className="font-playfair tracking-tight mb-16 lg:mb-[120px]"
             style={{
-              fontSize: "clamp(4rem, 6.5vw, 6rem)",
+              fontSize: "clamp(3rem, 12vw, 6rem)",
               lineHeight: "0.9",
             }}
           >
@@ -177,7 +177,8 @@ export default function ExperienceSection() {
                       flexDirection: "column",
                       gap: "20px",
                       borderLeft: "2px solid var(--border)",
-                      paddingLeft: "24px",
+                      paddingLeft: "16px",
+                      marginLeft: "4px",
                     }}
                   >
                     {exp.points.map((point, ptIdx) => (

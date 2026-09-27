@@ -44,10 +44,10 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 md:px-12 lg:px-24 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 md:px-12 lg:px-24 py-24 lg:py-32 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         {/* ── LEFT ── */}
-        <div className="flex flex-col lg:pl-10">
+        <div className="flex flex-col lg:pl-10 max-w-[100vw] overflow-hidden">
 
           {/* Overline */}
           <FadeUp delay={0} className="flex items-center gap-4" style={{ marginBottom: "48px" }}>
@@ -65,8 +65,8 @@ export default function HeroSection() {
           {/* Name */}
           <FadeUp delay={0.1}>
             <h1
-              className="font-playfair tracking-tight"
-              style={{ fontSize: "clamp(4rem, 6.5vw, 6rem)", lineHeight: "0.9", marginBottom: "40px" }}
+              className="font-playfair tracking-tight break-words"
+              style={{ fontSize: "clamp(3rem, 12vw, 6rem)", lineHeight: "0.9", marginBottom: "40px" }}
             >
               <span className="block font-bold" style={{ color: "var(--foreground)" }}>
                 Abhimanyu

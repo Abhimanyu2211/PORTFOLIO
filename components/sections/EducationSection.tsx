@@ -56,13 +56,13 @@ export default function EducationSection() {
   return (
     <section
       id="education"
-      className="grid-bg py-16 md:py-24 lg:py-[120px]"
+      className="grid-bg py-24 md:py-32 lg:py-[140px]"
       style={{
         borderTop: "1px solid var(--border)",
         backgroundColor: "var(--background)",
       }}
     >
-      <div className="w-full px-6 md:px-8 lg:px-[30px]">
+      <div className="w-full px-8 md:px-12 lg:px-24 max-w-[1440px] mx-auto">
         {/* Section label */}
         <FadeUp delay={0}>
           <p
@@ -85,7 +85,7 @@ export default function EducationSection() {
           <h2
             className="font-playfair tracking-tight"
             style={{
-              fontSize: "clamp(3.5rem, 5.5vw, 5rem)",
+              fontSize: "clamp(2.8rem, 11vw, 5rem)",
               lineHeight: "0.9",
               marginBottom: "80px",
             }}

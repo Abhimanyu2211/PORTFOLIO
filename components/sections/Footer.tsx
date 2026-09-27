@@ -54,13 +54,13 @@ const LinkedInIcon = () => (
 export default function Footer() {
   return (
     <footer
-      className="pt-16 pb-8 md:pt-20 md:pb-10"
+      className="pt-24 pb-12 md:pt-32 md:pb-16"
       style={{
         borderTop: "1px solid var(--border)",
         backgroundColor: "#f2f0eb",
       }}
     >
-      <div className="w-full px-6 md:px-8 lg:px-[30px]">
+      <div className="w-full px-8 md:px-12 lg:px-24 max-w-[1440px] mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end flex-wrap gap-12 md:gap-[80px]">
           {/* Left side: Heading and Links */}
           <div style={{ display: "flex", flexDirection: "column", gap: "48px" }}>
@@ -68,7 +68,7 @@ export default function Footer() {
               <h2
                 className="font-playfair tracking-tight"
                 style={{
-                  fontSize: "clamp(2.5rem, 4vw, 3.5rem)",
+                  fontSize: "clamp(2.2rem, 9vw, 3.5rem)",
                   lineHeight: "0.95",
                   margin: 0,
                 }}
@@ -200,7 +200,7 @@ export default function Footer() {
               <h1
                 className="font-playfair tracking-tight"
                 style={{
-                  fontSize: "clamp(3rem, 5vw, 4.5rem)",
+                  fontSize: "clamp(2.2rem, 9vw, 4.5rem)",
                   fontWeight: 700,
                   color: "rgba(0, 0, 0, 0.08)",
                   lineHeight: "0.85",

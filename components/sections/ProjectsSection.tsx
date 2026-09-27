@@ -77,13 +77,13 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="py-16 md:py-24 lg:py-[120px]"
+      className="py-24 md:py-32 lg:py-[140px]"
       style={{
         borderTop: "1px solid var(--border)",
         backgroundColor: "#f2f0eb", // Beige background for the section
       }}
     >
-      <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
+      <div className="w-full max-w-[1440px] mx-auto px-8 md:px-12 lg:px-24">
         {/* Section label */}
         <FadeUp delay={0}>
           <p
@@ -106,7 +106,7 @@ export default function ProjectsSection() {
           <h2
             className="font-playfair tracking-tight"
             style={{
-              fontSize: "clamp(3rem, 5vw, 4.5rem)",
+              fontSize: "clamp(2.5rem, 10vw, 4.5rem)",
               fontWeight: 700,
               color: "var(--foreground)",
               marginBottom: "48px",
@@ -124,9 +124,8 @@ export default function ProjectsSection() {
             {projects.map((project, idx) => (
               <div
                 key={idx}
+                className="bg-[#fcfbfa] p-6 sm:p-8 border border-[var(--border)]"
                 style={{
-                  backgroundColor: "#fcfbfa", // White card background
-                  padding: "32px 28px",
                   display: "flex",
                   flexDirection: "column",
                   height: "100%",
